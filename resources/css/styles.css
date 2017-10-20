@@ -15,8 +15,12 @@ html {
     margin: 1rem auto 0 auto;
     color: white;
     background-color: cadetblue;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 3rem;
 }
 
@@ -24,9 +28,15 @@ html {
     height: 3rem;
     padding-top: 1.3rem;
     width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: end;
-    align-items: end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
 }
 
 .head-logo-white img {
@@ -40,8 +50,12 @@ html {
 }
 
 nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     height: 3rem;
     width: 960px;
 
@@ -53,8 +67,12 @@ nav {
 
 .tabup-nav {
   width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   padding-top: 0.8rem;
 }
 
@@ -62,6 +80,8 @@ nav {
     display: none;
 }
 .slogan {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 3rem;
   font-size: 2rem;
@@ -83,9 +103,16 @@ nav {
 }
 
 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 ul li {
@@ -116,8 +143,13 @@ ul li {
 
 /*Contact & About*/
 .contact-about-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
 }
 
 .about, .contact {
@@ -181,6 +213,34 @@ footer span {
     font-weight: bold;
     margin-top: 5rem;
     margin-left: 23rem;
+    width: 285px;
+    padding: 0.75rem 4rem;
+  }
+  .clipart {
+    margin-left: 2rem;
+  }
+  .about {
+    margin-left: 11rem;
+  }
+}
+
+@media screen and (max-device-width: 1024px)
+{
+  html  {
+    background-size: auto 22rem;
+  }
+  .landing {
+    height: 22rem;
+  }
+  .container-width {
+    width: 100%;
+    margin: 0 0 0 0;
+  }
+  .slogan {
+    font-size: 1.33rem;
+    font-weight: bold;
+    margin-top: 5rem;
+    margin-left: 18rem;
     width: 285px;
     padding: 0.75rem 4rem;
   }
