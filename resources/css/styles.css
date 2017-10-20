@@ -5,7 +5,7 @@ html {
     background: url("../images/glasses-bg.png") center top no-repeat;
     background-size: auto 31rem;
 }
-
+/* Header/Landing */
 .landing {
     height: 26rem;
 }
@@ -75,7 +75,7 @@ nav {
   background-color: white;
 }
 
-
+/*Main Content*/
 .clipart {
   height: 8rem;
   width: 960px;
@@ -114,6 +114,7 @@ ul li {
   margin-bottom: 4rem;
 }
 
+/*Contact & About*/
 .contact-about-container {
   display: flex;
   flex-flow: row nowrap;
@@ -160,4 +161,33 @@ footer img {
 
 footer span {
   font-size: 1.5rem;
+}
+
+
+@media screen and (max-device-width: 1024px)
+{
+  html  {
+    background-size: 100% 22rem;
+  }
+  .landing {
+    height: 22rem;
+  }
+  .container-width {
+    width: 100%;
+    margin: 0 0 0 0;
+  }
+  .slogan {
+    font-size: 1.33rem;
+    font-weight: bold;
+    margin-top: 5rem;
+    margin-left: 23rem;
+    width: 285px;
+    padding: 0.75rem 4rem;
+  }
+  .clipart {
+    margin-left: 2rem;
+  }
+  .about {
+    margin-left: 11rem;
+  }
 }
